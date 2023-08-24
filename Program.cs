@@ -43,14 +43,14 @@
             Console.Write("Введите фразу для шифрования: ");
             string? wordToCode = Console.ReadLine();
             Console.Write("Введите ключ для шифрования: ");
-            int key = Console.Read();
+            int key = int.Parse(s: Console.ReadLine());
             Console.WriteLine($"Результат шифровки: {crypto.codeWord(wordToCode, key)}");
 
             Console.Write("Введите фразу для расшифрования: ");
             Console.ReadLine();
             string? wordToDecode = Console.ReadLine();
             Console.Write("Введите ключ для расшифрования: ");
-            key = Console.Read();
+            key = int.Parse(s: Console.ReadLine());
             Console.WriteLine($"Результат шифровки: {crypto.codeWord(wordToDecode, key)}");
 
         }
